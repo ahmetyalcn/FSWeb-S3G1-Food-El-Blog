@@ -1,6 +1,10 @@
-/*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap');
 *{
   color: #3C373B;
+}
+body{
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -37,11 +41,21 @@ p{
   border-radius: 10px;
 
 */
-img{
+.banner{
+  padding: 2%;
+  background-color: #eee;
+}
+.banner img{
   border-radius: 10px;
   width: 100%;
-
+  display: block;
 }
+.content-row img{
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+}
+
 .content-row {
   display: flex;
 
@@ -66,7 +80,7 @@ img{
   padding: 0px 10px
 }
 
-.container {
+.container, .banner {
   /*======= width property yaratın. Değerini 605px olarak atayın */
   margin: 0 auto;
   width: 605px;
@@ -79,6 +93,7 @@ img{
   display: inline-block;
   border-radius: 20px;
   color: white;
+  font-family: roboto;
   text-decoration: none;
   background: #E79947;
   margin-bottom: 20px;
@@ -117,23 +132,20 @@ img{
 .contact-section h2 {
   padding: 0;
   margin: 0 0 10px 0;
+  font-family: roboto;
 }
 
-/*======= contact-section class'da address tag'i için aşağdıaki stilleri içeren bir selector yaratın:
-   line-height: 2;
-*/
 
 footer {
   width: 100%;
-  background: #E79947;
+  
   border-top: 1px dashed white;
 }
 
 footer .footer-content { 
   margin: 0 auto; 
+  background: #E79947;
   width: 605px;
-  /*======= width property yaratın. Değerini 605px olarak atayın */
-  
 }
 
 footer .footer-content h3 {
@@ -146,13 +158,6 @@ footer nav {
   margin: 0px 10px;
 }
 
-
-/*======= Footer'daki anchor tag için aşağıdaki stilleri içeren bir selector yaratın:
-  margin: 10px;
-  color: black;
-  text-decoration: underline;
-*/
-
 footer nav a{
   margin: 10px;
   color: black;
@@ -162,12 +167,8 @@ footer nav a:first-child {
   margin-left: 0;
 }
 
-/*======= Footer nav'daki anchor tag için aşağıdaki stilleri içeren bir hover state yaratın:
-  color: white;
-*/
 
 footer .footer-content .copyright {
   padding: 20px 0;
   text-align: center;
-   /*======= metni ortalayacak kodu yazın */
 }
